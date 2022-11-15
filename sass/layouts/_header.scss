@@ -15,7 +15,6 @@
   color: var(--primary-white-color);
 }
 
-/*----------Site nav, auth nav----------*/
 .header {
   border-bottom: 1px solid var(--line-color);
 }
@@ -56,17 +55,15 @@
   &:focus {
     color: var(--accent-color);
   }
-  &.current,
-  &.current,
-  &.current {
-    color: var(--accent-color);
-  }
 }
 
 .link {
   color: var(--title-text-color);
   position: relative;
   text-decoration: none;
+  &.current {
+    color: var(--accent-color);
+  }
   &::after {
     content: '';
     position: absolute;

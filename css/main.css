@@ -1,31 +1,18 @@
 @charset "UTF-8";
 :root {
-  /* основной цвет текста */
   --primary-text-color: #757575;
-  /* основной цвет заголовка */
   --title-text-color: #212121;
-  /* основные белый и черный цвет */
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
-  /* акцент */
   --accent-color: #2196f3;
-  /* цвет фона хедера */
   --top-line-bg-color: #ffffff;
-  /* вторичный цвет фона */
   --second-bg-color: #f5f4fa;
-  /* цвет фона hero и футера */
   --hero-footer-bg-color: #2f303a;
-  /* второй цвет фона */
   --bg-hero: #c4c4c4;
-  /* цвет текста футера */
   --color-text-footer: rgba(255, 255, 255, 0.6);
-  /* фон актиной кнопки */
   --active-bg-color: #188ce8;
-  /* border color */
   --border-color: #eeeeee;
-  /* border line color */
   --line-color: #ececec;
-  /* Background-icon */
   --background-icon: #afb1b8;
 }
 
@@ -126,7 +113,6 @@ img {
   color: var(--primary-white-color);
 }
 
-/*----------Site nav, auth nav----------*/
 .header-container {
   display: flex;
   align-items: center;
@@ -209,9 +195,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.link.current,
-.mail.current,
-.tel.current {
+.link.current {
   color: var(--accent-color);
 }
 
@@ -224,7 +208,7 @@ img {
 
 .hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../imges/hero.jpg');
+    url('../images/hero.jpg');
   background-color: var(--bg-hero);
   max-width: 1600px;
   padding-top: 200px;
@@ -955,6 +939,7 @@ img {
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
