@@ -1,4 +1,14 @@
-.logo {
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  border-bottom: 1px solid var(--line-color);
+}
+
+.navigation__logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -7,37 +17,23 @@
   color: var(--accent-color);
 }
 
-.header-word {
+.navigation-word {
   color: var(--primary-black-color);
 }
 
-.footer-word {
-  color: var(--primary-white-color);
-}
-
-.header {
-  border-bottom: 1px solid var(--line-color);
-}
-
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
-}
-
-.site-nav,
-.auth-nav {
-  display: flex;
-  align-items: center;
-  gap: 50px;
 }
 
 .site-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
   margin-left: 93px;
 }
 
-.link,
-.mail,
-.tel {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -47,20 +43,13 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus,
-  &:hover,
-  &:focus,
+  color: var(--title-text-color);
+  position: relative;
+  text-decoration: none;
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
-}
-
-.link {
-  color: var(--title-text-color);
-  position: relative;
-  text-decoration: none;
   &.current {
     color: var(--accent-color);
   }
@@ -85,13 +74,34 @@
   }
 }
 
-.mail,
-.tel {
-  color: var(--primary-text-color);
+.auth-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
-.envelope,
-.smartphone {
+.auth-nav__mail,
+.auth-nav__tel {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--primary-text-color);
+  &:hover,
+  &:focus,
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.auth-nav__envelope,
+.auth-nav__smartphone {
   margin-right: 10px;
   vertical-align: middle;
   fill: currentColor;

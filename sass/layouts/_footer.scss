@@ -4,11 +4,30 @@
   padding-bottom: 60px;
 }
 
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.footer__logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.footer-word {
+  color: var(--primary-white-color);
+}
+
 .address {
   margin-top: 20px;
 }
 
-.address-link {
+.address__link {
   display: inline-block;
   font-size: 14px;
   line-height: 1.71;
@@ -21,8 +40,8 @@
   }
 }
 
-.address-mail,
-.address-tel {
+.address__mail,
+.address__tel {
   display: inline-block;
   font-size: 14px;
   line-height: 1.71;
@@ -38,11 +57,11 @@
   }
 }
 
-.footer-social {
+.footer__social {
   margin-left: 70px;
 }
 
-.footer-title {
+.footer__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -52,18 +71,18 @@
   margin-bottom: 20px;
 }
 
-.footer-social-list {
+.social {
   display: flex;
 }
 
-.footer-social-item {
+.social__item {
   margin-right: 10px;
   &:last-child {
     margin-right: 0;
   }
 }
 
-.footer-social-link {
+.social__link {
   display: block;
   padding: 12px;
   border-radius: 50%;
@@ -76,12 +95,12 @@
   }
 }
 
-.footer-social-icon {
+.social__icon {
   display: block;
   fill: currentColor;
 }
 
-.footer-mail {
+.footer__mail {
   margin-left: 93px;
 }
 

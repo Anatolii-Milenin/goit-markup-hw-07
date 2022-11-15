@@ -7,11 +7,11 @@
   gap: 30px;
 }
 
-.work-item {
+.work__item {
   position: relative;
 }
 
-.work-box {
+.work__box {
   position: absolute;
   bottom: 0;
   width: 370px;
@@ -19,7 +19,7 @@
   background: rgba(47, 48, 58, 0.8);
 }
 
-.work-text {
+.work__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
