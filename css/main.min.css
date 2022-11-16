@@ -583,9 +583,6 @@ img {
 .project-cart {
   flex-basis: calc((100% - 60px) / 3);
 }
-.project-cart:hover .project-info {
-  transform: translateY(0);
-}
 .project-cart-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -594,6 +591,10 @@ img {
 .project-cart-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-cart-link:hover .project-info,
+.project-cart-link:focus .project-info {
+  transform: translateY(0);
 }
 .project-top-info {
   position: relative;

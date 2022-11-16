@@ -1,5 +1,5 @@
 @import './utils/vars';
-@import './layouts/body';
+@import './base/body';
 @import './base/reset';
 @import './components/section';
 @import './components/section-title';
@@ -7,12 +7,12 @@
 @import './components/btn';
 @import './utils/hidden';
 @import './layouts/header';
-@import './layouts/hero';
-@import './layouts/feature';
-@import './layouts/work';
-@import './layouts/team';
-@import './layouts/customers';
+@import './components/hero';
+@import './components/feature';
+@import './components/work';
+@import './components/team';
+@import './components/customers';
 @import './layouts/footer';
-@import './layouts/portfolio-filter';
-@import './layouts/portfolio-project';
+@import './components/portfolio-filter';
+@import './components/portfolio-project';
 @import './components/modal';
